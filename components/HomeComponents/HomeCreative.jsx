@@ -7,10 +7,10 @@ import Sun from "../../public/assets/svg/sun.svg";
 
 const HomeCreative = () => {
   return (
-    <div className="bg-light py-10">
-      <div className="container mx-auto md:flex gap-5 justify-center">
+    <div className="py-10 bg-light">
+      <div className="container justify-center gap-5 mx-auto md:flex">
         <div className="px-2 md:max-w-md md:mt-20">
-          <h3 className="font-bold text-2xl pb-3">
+          <h3 className="pb-3 text-2xl font-bold">
             We think as strategists. We do as creators.
           </h3>
           <p className="pb-10">
@@ -23,14 +23,14 @@ const HomeCreative = () => {
             </a>
           </Link>
         </div>
-        <div className="flex relative flex-wrap gap-2 mt-10  mx-2 ml-5 ">
-          <div className="relative border-4 border-dark  h-72 w-60">
-            <Image layout="fill" src={CreativeImage1} />
+        <div className="relative flex flex-wrap gap-2 mx-2 mt-10 ml-5 ">
+          <div className="relative border-4 border-dark h-72 w-60">
+            <Image layout="fill" src={CreativeImage1.src} />
           </div>
-          <div className="relative border-4 border-dark h-52 w-40">
-            <Image layout="fill" src={CreativeImage2} />
+          <div className="relative w-40 border-4 border-dark h-52">
+            <Image layout="fill" src={CreativeImage2.src} />
           </div>
-          <div className="absolute -left-6 -top-8 bg-light rounded-full h-14 w-14">
+          <div className="absolute rounded-full -left-6 -top-8 bg-light h-14 w-14">
             <Image src={Sun} />
           </div>
         </div>
